@@ -1,0 +1,57 @@
+ul.benefits{
+    display: flex;
+}
+li.benefits__item{
+    flex: 1;
+    margin: 0 3%;
+    list-style: none;
+ 
+
+ 
+
+ &:last-child{
+    margin-left: 0;
+}
+}
+li.benefits__item.benefits{
+    margin-left: 0;
+    text-align: center;
+}
+.benefit{
+    text-align: center;
+}
+.benefit__image--wrapper{
+    display: inline-block;
+    width: 126px;
+    height: 126px;
+    position: relative;
+    background:#f2f5f4;
+    background-repeat: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+img.benefit__icon{
+    width: 75px;
+    height: 69px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+section.benefits--section{
+    position: relative;
+    background: url(../img/leaf-grey.png) left top 37% no-repeat;
+
+    
+    &::before{
+        content:url(../img/rasberry.png);
+        position: absolute;
+        bottom: -100px;
+        left: 0%;
+    }
+    
+}
+.benefits__container{
+    width: 100%;
+    
+}

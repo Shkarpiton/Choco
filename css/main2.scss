@@ -1,0 +1,108 @@
+@import "benefits.scss";
+@import "form.scss";
+@import "headline.scss";
+@import "interactive--avatar.scss";
+@import "main3.scss";
+@import "main4.scss";
+@import "main5.scss";
+@import "reviews.scss";
+@import "section.scss";
+@import "map.scss";
+@import "footer.scss";
+@import "team.scss";
+@import "shop.scss";
+
+
+
+body{
+    margin: 0;
+}
+.wrapper{
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}
+.container{
+    /*width: 95%;
+    max-width: 1100px;*/
+    margin: 0 /*auto*/;
+    position: relative;
+}
+section.hero{
+    background: url(./pattern1.png) right top no-repeat; 
+    background-color: #61C4D9;
+    min-height: 650px;
+    color: #ffffff;
+    position: relative;
+    
+    &::before{
+        content:url(../img/leaf-left.png);
+        position: absolute;
+        bottom: -40px;
+        left: 2%;
+    }
+
+    &::after{
+     content: url(../img/bars-berries2.png);
+    /*background-image: url(../img/bars-berries2.png);
+    background-size: cover;
+    height: 100%;
+    width: 47%;*/
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    display: inline-block;
+    }
+}
+a{
+    color: white;
+}
+.hero__main--title{
+    color: white;
+}
+.hero__title--desc{
+    color: white;
+}
+.btn{
+    text-decoration: none;
+    padding: 21px 41px;
+    border-radius: 100px;
+    text-transform: uppercase;
+}
+.btn--theme--white{
+    background:white;
+    color: #365A49;
+    font-weight: bold;
+}
+.btn--theme--white:hover{
+    color: #ffffff;
+    background: #365A49;
+}
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 24px 0 45px 80px;
+    background: url(./stickofconfectionery.png) left 65% center  no-repeat;
+    width: 95%;
+}
+
+.hero__main--title{
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.hero__title--desc{
+    font-size: 21px;
+    margin-bottom: 48px;
+    padding-right: 10%;
+}
+.hero__title--section{
+    width: 46%;
+    margin: 88px 0;
+}
+
+    

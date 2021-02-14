@@ -1,0 +1,28 @@
+h2.form__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #365A49;
+}
+
+form.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 20px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.container__form {
+  padding: 20%;
+}
+
+section.section__form {
+  background: url(../img/pattern-berry.png) no-repeat;
+}

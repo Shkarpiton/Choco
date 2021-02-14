@@ -1,0 +1,35 @@
+header.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+a.menu__link {
+  text-decoration: none;
+}
+
+li.menu__item {
+  margin-right: 15px;
+  text-decoration: none;
+}
+li.menu__item.last-child {
+  margin-right: 0;
+}
+
+a.phone--number {
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+img.phone--number__icon--elem {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
