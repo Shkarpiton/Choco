@@ -1,5 +1,22 @@
 ul.socials__list {
   display: flex;
-  right: 0%;
-  position: absolute;
+  right: 5%;
+  top: 0;
+}
+
+li.socials__item {
+  margin-right: 13px;
+  list-style-type: none;
+}
+
+.footer__telefone {
+  display: flex;
+}
+
+.footer__telefone--img {
+  margin-right: 0.5%;
+}
+
+section.section__footer {
+  position: relative;
 }

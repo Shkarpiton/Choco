@@ -1,7 +1,7 @@
-.features{
+ul.hero__feature{
     display: flex;
 }
-li.features__item{
+li.feature__item{
     margin-right: 46px;
     list-style: none;
     &:last-child{

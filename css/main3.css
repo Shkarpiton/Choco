@@ -15,20 +15,20 @@ a.menu__link {
 
 li.menu__item {
   margin-right: 15px;
-  text-decoration: none;
+  list-style: none;
 }
 li.menu__item.last-child {
   margin-right: 0;
 }
 
-a.phone--number {
+a.phone__number {
   font-size: 24px;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
-img.phone--number__icon--elem {
+img.phone__number-icon-elem {
   width: 12px;
   height: 12px;
   margin-right: 6px;

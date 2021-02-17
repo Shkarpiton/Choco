@@ -1,26 +1,27 @@
-ul.benefits {
+ul.benefit__list {
   display: flex;
+  padding: 2%;
 }
 
-li.benefits__item {
+li.benefit__item {
   flex: 1;
   margin: 0 3%;
   list-style: none;
 }
-li.benefits__item:last-child {
+li.benefit__item:last-child {
   margin-left: 0;
 }
 
-li.benefits__item.benefits {
+li.benefit__item {
   margin-left: 0;
   text-align: center;
 }
 
-.benefit {
+.benefit__container {
   text-align: center;
 }
 
-.benefit__image--wrapper {
+.benefit__image-wrapper {
   display: inline-block;
   width: 126px;
   height: 126px;
@@ -40,19 +41,57 @@ img.benefit__icon {
   transform: translate(-50%, -50%);
 }
 
-section.benefits--section {
+section.section__benefit {
   position: relative;
-  background: url(../img/leaf-grey.png) left top 37% no-repeat;
+  background: url(../img/leaf-grey.png) left top 40% no-repeat;
 }
-section.benefits--section::before {
+section.section__benefit::before {
   content: url(../img/rasberry.png);
   position: absolute;
-  bottom: -100px;
+  bottom: -110px;
   left: 0%;
 }
 
-.benefits__container {
+.benefit__container {
   width: 100%;
+}
+
+.headline__title {
+  margin-bottom: 30px;
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.headline__subtitle {
+  color: #666666;
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+
+.benefit__desc {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #666666;
+}
+
+h3.benefit__title {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 32px;
+  color: #292929;
+  margin: 20px 0;
 }
 
 h2.form__title {
@@ -70,7 +109,8 @@ form.form {
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 8%;
+  display: -ms-flexbox;
 }
 .form__col:last-child {
   margin-right: 0;
@@ -98,7 +138,7 @@ section.section__form {
 
 label.form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 10%;
 }
 label.form__block:last-child {
   margin-right: 0;
@@ -106,10 +146,67 @@ label.form__block:last-child {
 
 .form__input {
   width: 100%;
+  border: none;
+  padding: 18px 11px;
+  border: solid 3px transparent;
+}
+.form__input--textarea {
+  height: 180px;
+  resize: none;
+}
+.form__input:focus {
+  border-color: #dee2bd;
+  outline: none;
 }
 
 .form.__row {
   display: flex;
+  margin-bottom: 18px;
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 0;
+}
+.radio--checkbox .radio__visible::before {
+  background: url();
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+}
+.radio__visible::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #365A49;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .headline__title {
@@ -158,7 +255,7 @@ img.interactive--avatar__img {
   width: 100%;
 }
 
-header.header {
+header.container__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -181,28 +278,28 @@ li.menu__item.last-child {
   margin-right: 0;
 }
 
-a.phone--number {
+a.phone__number {
   font-size: 24px;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
-img.phone--number__icon--elem {
+img.phone__number-icon-elem {
   width: 12px;
   height: 12px;
   margin-right: 6px;
 }
 
-.features {
+ul.hero__feature {
   display: flex;
 }
 
-li.features__item {
+li.feature__item {
   margin-right: 46px;
   list-style: none;
 }
-li.features__item:last-child {
+li.feature__item:last-child {
   margin-right: 0;
 }
 
@@ -267,15 +364,21 @@ ul.reviews__switcher {
 
 li.reviews__item {
   list-style-type: none;
-  padding: 3% 29%;
+  padding-top: 3%;
 }
 
 .section {
-  height: 100vh;
   min-height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.section_list {
+  list-style-type: none;
+}
+.section_list:last-child {
+  max-height: 252px;
 }
 
 .section__title {
@@ -311,7 +414,7 @@ li.socials__item {
   margin-right: 0.5%;
 }
 
-section.footer {
+section.section__footer {
   position: relative;
 }
 
@@ -344,16 +447,17 @@ li.people__item.people__item--one::after {
 
 li.shop__item {
   display: flex;
+  background: #F8FAF9;
 }
 
 ul.composition__list {
   list-style-type: none;
-  background: rgba(255, 255, 255, 0.8);
 }
 
 li.composition__item {
   display: flex;
   margin-bottom: 6%;
+  background: #F8FAF9;
 }
 
 .composition__text {
@@ -372,7 +476,7 @@ ul.composition__list {
   visibility: visible;
 }
 
-a.btn__shop--green {
+a.btn__shop-green {
   text-decoration: none;
   padding: 21px 41px;
   border-radius: 100px;
@@ -380,6 +484,7 @@ a.btn__shop--green {
   background: #365A49;
   color: white;
   font-weight: bold;
+  position: absolute;
 }
 
 .price {
@@ -393,7 +498,76 @@ a.btn__shop--green {
   font-style: normal;
   font-weight: 300;
   font-size: 60px;
-  line-height: 45%;
+}
+
+.description__price {
+  display: flex;
+}
+
+.description__weight {
+  display: flex;
+}
+
+.description__massa {
+  margin-left: 10%;
+}
+
+h2.description__title {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 37px;
+  line-height: 46px;
+  color: #292929;
+}
+
+.description__text {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 25px 0;
+}
+
+.calorie__content-title {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.calorie__content-text {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.massa__title {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.massa__text {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -408,31 +582,26 @@ body {
 }
 
 .container {
-  /*width: 95%;
-  max-width: 1100px;*/
-  margin: 0;
+  max-width: 1100px;
+  margin: 0 auto;
   position: relative;
 }
 
-section.hero {
+section.section__hero {
   background: url(./pattern1.png) right top no-repeat;
   background-color: #61C4D9;
   min-height: 650px;
   color: #ffffff;
   position: relative;
 }
-section.hero::before {
+section.section__hero::before {
   content: url(../img/leaf-left.png);
   position: absolute;
   bottom: -40px;
   left: 2%;
 }
-section.hero::after {
+section.section__hero::after {
   content: url(../img/bars-berries2.png);
-  /*background-image: url(../img/bars-berries2.png);
-  background-size: cover;
-  height: 100%;
-  width: 47%;*/
   position: absolute;
   bottom: -40px;
   right: 0;
@@ -443,11 +612,11 @@ a {
   color: white;
 }
 
-.hero__main--title {
+.title__main {
   color: white;
 }
 
-.hero__title--desc {
+.title__desc {
   color: white;
 }
 
@@ -458,13 +627,13 @@ a {
   text-transform: uppercase;
 }
 
-.btn--theme--white {
+.btn__theme-white {
   background: white;
   color: #365A49;
   font-weight: bold;
 }
 
-.btn--theme--white:hover {
+.btn__theme-white:hover {
   color: #ffffff;
   background: #365A49;
 }
@@ -475,24 +644,34 @@ a {
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px 80px;
-  background: url(./stickofconfectionery.png) left 65% center no-repeat;
+  background: url(./stickofconfectionery.png) left 90% center no-repeat;
   width: 95%;
 }
 
-.hero__main--title {
+.title__main {
   font-size: 48px;
   line-height: 1.1;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.hero__title--desc {
+.title__desc {
   font-size: 21px;
   margin-bottom: 48px;
   padding-right: 10%;
 }
 
-.hero__title--section {
+.hero__title {
   width: 46%;
   margin: 88px 0;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 45px 50px;
+  background: url(./stickofconfectionery.png) left 90% center no-repeat;
+  width: 95%;
 }

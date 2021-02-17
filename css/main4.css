@@ -2,11 +2,11 @@
   display: flex;
 }
 
-li.features__item {
+li.feature__item {
   margin-right: 46px;
-  text-decoration: none;
+  list-style: none;
 }
-li.features__item:last-child {
+li.feature__item:last-child {
   margin-right: 0;
 }
 
