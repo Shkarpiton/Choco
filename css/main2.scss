@@ -58,11 +58,22 @@ section.section__hero{
 a{
     color: white;
 }
-.title__main{
-    color: white;
+h1.title__main {
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
 }
 .title__desc{
     color: white;
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 20px 0;
 }
 .btn{
     text-decoration: none;
@@ -73,7 +84,11 @@ a{
 .btn__theme-white{
     background:white;
     color: #365A49;
-    font-weight: bold;
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 18px;
 }
 .btn__theme-white:hover{
     color: #ffffff;
