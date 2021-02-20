@@ -213,6 +213,24 @@ label.radio.radio-checkbox {
   display: flex;
 }
 
+.form__title {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #497870;
+}
+
+.radio__title {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #497870;
+}
+
 .headline__title {
   margin-bottom: 25px;
 }
@@ -364,20 +382,32 @@ ul.reviews__switcher {
 }
 
 .reviews__title {
-  font-size: 30px;
-  font-weight: bold;
   margin-bottom: 22px;
-  color: black;
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 32px;
+  color: #292929;
 }
 
 .reviews__text {
   margin-bottom: 36px;
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #666666;
 }
 
 .reviews__author {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: 500;
   font-size: 18px;
-  font-weight: bold;
-  color: black;
+  line-height: 24px;
+  color: #292929;
 }
 
 li.reviews__item {
@@ -415,7 +445,7 @@ img.map__img-img {
 
 ul.socials__list {
   display: flex;
-  right: 5%;
+  right: 0%;
   top: 0;
   position: absolute;
 }
@@ -438,6 +468,24 @@ section.section__footer {
   width: 100%;
 }
 
+.footer__address {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 24px;
+  color: #292929;
+}
+
+.telefone__number {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: #497870;
+}
+
 ul.team__people {
   display: flex;
   text-align: center;
@@ -449,12 +497,43 @@ li.people__item {
 }
 
 .team__title {
-  font-size: 35px;
+  font-family: Alegreya Sans;
+  font-style: normal;
   font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
   margin-bottom: 60px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.people__title {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21.0181px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.people__profession {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #292929;
+}
+
+.people__text {
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #666666;
 }
 
 li.shop__item {

@@ -1,6 +1,6 @@
 ul.socials__list{
     display: flex;
-    right: 5%;
+    right: 0%;
     top: 0;
     position: absolute;
 }
@@ -17,4 +17,20 @@ li.socials__item{
 section.section__footer {
     position: relative;
     width: 100%;
+}
+.footer__address {
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 24px;
+    color: #292929;
+}
+.telefone__number {
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    color: #497870;
 }
