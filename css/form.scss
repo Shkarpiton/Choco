@@ -20,7 +20,7 @@ form.form{
         margin-right: 0;
     }
 }
-.container__form{  
+.form__container{  
     height: 100%;
     max-width: 940px;
     margin: 0 auto;
@@ -63,21 +63,21 @@ label.form__block{
         outline: none;
     }
 }
-.form.__row {
+.form__row {
     display: flex;
     margin-bottom: 18px;
 }
 .form__controls{
     display: flex;
-    flex-wrap: wrap;
+   
 }
 
-.radio{
+.form__radio{
     display: flex;
     cursor: pointer;
     user-select: none;
 
-    &--checkbox {
+    &-checkbox {
         .radio__visible{
             border-radius: 0;
 
@@ -116,4 +116,7 @@ label.form__block{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+label.radio.radio-checkbox {
+    display: flex;
 }
