@@ -1,7 +1,7 @@
 .interactive--avatar{
-    width: 80px;
-    height: 80px;
-    border: 6px solid transparent;
+    width: rem(80px);
+    height: rem(80px);
+    border: rem(6px) solid transparent;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -21,7 +21,7 @@ li.interactive--avatar__img{
     object-fit: cover;
 }
 li.interactive--avatar--active{
-    border: 6px solid #0f5a47
+    border: rem(6px) solid #0f5a47
 }
 img.interactive--avatar__img{
     width: 100%;

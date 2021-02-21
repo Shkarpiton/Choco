@@ -1,3 +1,4 @@
+@import "main6.scss";
 @import "benefits.scss";
 @import "form.scss";
 @import "headline.scss";
@@ -13,6 +14,20 @@
 @import "shop.scss";
 
 
+
+html{
+    @include tablets{
+        font-style: 17px;
+    }
+
+    @include phones{
+        font-size: 18px;
+    }
+}
+html{
+    font-size: 18px;
+
+}
 * 
 {
   margin: 0;
@@ -23,6 +38,7 @@ body{
     margin: 0;
 }
 .wrapper{
+    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
@@ -30,7 +46,7 @@ body{
 section.section__hero{
     background: url(./pattern1.png) right top no-repeat; 
     background-color: #61C4D9;
-    min-height: 650px;
+    min-height: rem(650px);
     color: #ffffff;
     position: relative;
     width: 100%;
@@ -38,14 +54,14 @@ section.section__hero{
     &::before{
         content:url(../img/leaf-left.png);
         position: absolute;
-        bottom: -40px;
+        bottom: rem(-40px);
         left: 2%;
     }
 
     &::after{
      content: url(../img/bars-berries2.png);
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     right: 0;
     display: inline-block;
     }
@@ -57,8 +73,8 @@ h1.title__main {
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: rem(48px);
+    line-height: rem(58px);
     text-transform: uppercase;
 }
 .title__desc{
@@ -66,14 +82,14 @@ h1.title__main {
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 21px;
-    line-height: 25px;
-    margin: 20px 0;
+    font-size: rem(21px);
+    line-height: rem(25px);
+    margin: rem(20px) 0;
 }
 .btn{
     text-decoration: none;
-    padding: 21px 41px;
-    border-radius: 100px;
+    padding: rem(21px) (41px);
+    border-radius: rem(100px);
     text-transform: uppercase;
 }
 .btn__theme-white{
@@ -82,8 +98,8 @@ h1.title__main {
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: rem(16px);
+    line-height: rem(18px);
 }
 .btn__theme-white:hover{
     color: #ffffff;
@@ -94,32 +110,32 @@ h1.title__main {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 45px 80px;
+    padding: rem(24px) 0 rem(45px) rem(80px);
     background: url(./stickofconfectionery.png) left 90% center  no-repeat;
     width: 95%;
 }
 
 .title__main{
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.1;
     font-weight: bold;
     text-transform: uppercase;
 }
 .title__desc{
-    font-size: 21px;
-    margin-bottom: 48px;
+    font-size: rem(21px);
+    margin-bottom: rem(48px);
     padding-right: 10%;
 }
 .hero__title{
     width: 46%;
-    margin: 88px 0;
+    margin: rem(88px) 0;
 }
 .hero__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 45px 50px;
+    padding: rem(24px) 0 rem(45px) rem(50px);
     background: url(./stickofconfectionery.png) left 90% center no-repeat;
     width: 95%;
 }  

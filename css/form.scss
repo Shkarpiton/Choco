@@ -1,7 +1,7 @@
 h2.form__title{
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
     text-align: center;
     text-transform: uppercase;
     color: #365A49;
@@ -22,7 +22,7 @@ form.form{
 }
 .form__container{  
     height: 100%;
-    max-width: 940px;
+    max-width: rem(940px);
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ section.section__form {
 }
 .form__row{
     display: flex;
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
 }
 
 label.form__block{
@@ -50,11 +50,11 @@ label.form__block{
 .form__input{
     width: 100%;
     border: none;
-    padding: 18px 11px;
-    border:solid 3px transparent;
+    padding: rem(18px) rem(11px);
+    border:solid rem(3px) transparent;
 
     &--textarea{
-        height: 180px;
+        height: rem(180px);
         resize: none;
     }
 
@@ -65,7 +65,7 @@ label.form__block{
 }
 .form__row {
     display: flex;
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
 }
 .form__controls{
     display: flex;
@@ -98,16 +98,16 @@ label.form__block{
     }
 }
 .radio__visible{
-    width: 26px;
-    height: 26px;
+    width: rem(26px);
+    height: rem(26px);
     position: relative;
     border-radius: 50%;
     background: #fff;
 
     &::before{
         content: "";
-        width: 14px;
-        height: 14px;
+        width: rem(14px);
+        height: rem(14px);
         background: #365A49;
         border-radius: 50%;
         position: absolute;
@@ -124,15 +124,15 @@ label.radio.radio-checkbox {
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: rem(18px);
+    line-height: rem(22px);
     color: #497870;
 }
 .radio__title {
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: rem(18px);
+    line-height: rem(22px);
     color: #497870;
 }

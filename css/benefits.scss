@@ -20,8 +20,8 @@ li.benefit__item{
 }
 .benefit__image-wrapper{
     display: inline-block;
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     position: relative;
     background:#f2f5f4;
     background-repeat: 50%;
@@ -29,8 +29,8 @@ li.benefit__item{
     border-radius: 50%;
 }
 img.benefit__icon{
-    width: 75px;
-    height: 69px;
+    width: rem(75px);
+    height: (69px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,7 +45,7 @@ section.section__benefit{
     &::before{
         content:url(../img/rasberry.png);
         position: absolute;
-        bottom: -110px;
+        bottom: (-110px);
         left: 0%;
     }
     
@@ -54,28 +54,28 @@ section.section__benefit{
     width: 100%;   
 }
 .headline__title {
-    margin-bottom: 30px;
+    margin-bottom: (30px);
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: (48px);
+    line-height: (58px);
 }
 .headline__subtitle {
     color: #666666;
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 50px;
+    font-size: rem(18px);
+    line-height: rem(22px);
+    margin-bottom: rem(50px);
 }
 .benefit__desc {
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: rem(18px);
+    line-height: rem(22px);
     color: #666666;
 
 }
@@ -83,9 +83,9 @@ h3.benefit__title {
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 27px;
-    line-height: 32px;
+    font-size: rem(27px);
+    line-height: rem(32px);
     color: #292929;
-    margin: 20px 0;
+    margin: rem(20px) 0;
 }
 

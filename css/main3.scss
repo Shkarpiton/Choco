@@ -12,11 +12,11 @@ a.menu__link {
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: rem(18px);
+    line-height: rem(20px);
 }
 li.menu__item{
-    margin-right: 15px;
+    margin-right: rem(15px);
     list-style: none;
     &.last-child{
         margin-right: 0;
@@ -29,11 +29,23 @@ a.phone__number{
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 18px;
+    font-size: rem(22px);
+    line-height: rem(18px);
 }
 img.phone__number-icon-elem{
-    width: 12px;
-    height: 12px;
-    margin-right: 6px;
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(6px);
+}
+nav.header__menu{
+
+    @mixin  tablets{
+        display: none;
+    }
+}
+a.phone__number.header__phone-number{
+
+    @mixin tablets{
+        display: none;
+    }
 }

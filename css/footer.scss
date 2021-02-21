@@ -5,7 +5,7 @@ ul.socials__list{
     position: absolute;
 }
 li.socials__item{
-    margin-right: 13px;
+    margin-right: rem(13px);
     list-style-type: none;
 }
 .footer__telefone {
@@ -22,15 +22,15 @@ section.section__footer {
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 21px;
-    line-height: 24px;
+    font-size: rem(21px);
+    line-height: rem(24px);
     color: #292929;
 }
 .telefone__number {
     font-family: Alegreya Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 21px;
-    line-height: 21px;
+    font-size: rem(21px);
+    line-height: rem(21px);
     color: #497870;
 }
