@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Comtible" content="IE=edge , chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chocco</title>
-    <link rel="stylesheet" href="./css/main2.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/main2.css">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
+   
 </head>
 <body>
     
@@ -49,10 +51,15 @@
                         <span class="phone__text">8 800 903 90 90</span>
                         </a>
                         </div>
+                        <a href="" class="header__hamburger">
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
+                        </a>
                 </header>
                     <div class="hero__title">
                         <h1 class="title__main">
-                            НАТУРАЛЬНЫЕ<br> ШОКОЛАДНЫЕ<br> БАТОНЧИКИ
+                            НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ<br> БАТОНЧИКИ
                         </h1>
                         <div class="title__desc">
                             Наши батончики идеально подходят для<br> тех, кто следит за своим здоровьем
@@ -146,6 +153,10 @@
                 </div>
             </section>
             <section class="section section__shop">
+                <a href="#" class="product-slider__arrow product-slider__arrow--direvtion--prev">
+                </a>
+                <a href="#" class="product-slider__arrow product-slider__arrow--direvtion--next">
+                </a>
             <ul class="shop__list">
                 <li class="shop__item">
             <div class="shop__stick-of-confectionery">
@@ -228,7 +239,7 @@
                     </ul>
                 </div>
                 <div class="shop__description">
-                    <h2 class="description__title">Батончик “Гранола<br> виноград”</h2>
+                    <h2 class="description__title">Батончик “Гранола виноград”</h2>
                     <div class="description__text">
                         <p>Гранола из винограда, грецкого ореха и<br> кунжутных семечек. В состав также входят: сухое<br> молоко, заменитель сахара и какао бобы.</p>
                     </div>
@@ -252,194 +263,528 @@
             </div>
                 </li>
                 <li class="shop__item">
-            <div class="stick--of--confectionery">
-                <img src="./img/product2.png" alt="" class="stick__of__confectionery">
-            </div>
-            <div class="content__composition">
-                <div class="composition">
-                    <div class="click__img">
-                            <a href="#" class="click__img">
-                            <img src="./img/click.png" alt="" class="click__img--composition">
-                            </a>
-                        </div>
-                    <ul class="composition__list">
-                        
-                        <li class="composition__item">
-                            <div class="composition__img">
-                                <img src="./img/oat.png" alt="" class="products__img">
-                            </div>
-                            <div class="composition__text">
-                                Овёс
-                            </div>
-                            <div class="weight">
-                                25г
-                            </div>
-                        </li>
-                        <li class="composition__item">
-                            <div class="composition__img">
-                                <img src="./img/seaweed.png" alt="" class="products__img">
-                            </div>
-                            <div class="composition__text">
-                                Мор.водоросли
-                            </div>
-                            <div class="weight">
-                                15г
-                            </div>
-                        </li>
-                        <li class="composition__item">
-                            <div class="composition__img">
-                                <img src="./img/almond.png" alt="" class="products__img">
-                            </div>
-                            <div class="composition__text">
-                                Миндаль
-                            </div>
-                            <div class="weight">
-                                20г
-                            </div>
-                        </li>
-                        <li class="composition__item">
-                            <div class="composition__img">
-                                <img src="./img/washing-powder.png" alt="" class="products__img">
-                            </div>
-                            <div class="composition__text">
-                                Сухое молоко
-                            </div>
-                            <div class="weight">
-                                10г
-                            </div>
-                        </li>
-                        <li class="composition__item">
-                            <div class="composition__img">
-                                <img src="./img/frame.png" alt="" class="products__img">
-                            </div>
-                            <div class="composition__text">
-                                Тыкв.семечки
-                            </div>
-                            <div class="weight">
-                                20г
-                            </div>
-                        </li>
-                        <li class="composition__item">
-                            <div class="composition__img">
-                                <img src="./img/apitherapy.png" alt="" class="products__img">
-                            </div>
-                            <div class="composition__text">
-                                Зам. сахара
-                            </div>
-                            <div class="weight">
-                                4г
-                            </div>
-                        </li>
-                        <li class="composition__item">
-                            <div class="composition__img">
-                                <img src="./img/beans.png" alt="" class="products__img">
-                            </div>
-                            <div class="composition__text">
-                                Какао бобы
-                            </div>
-                            <div class="weight">
-                                4г
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="description">
-                    <h2 class="description">Батончик “Гранола виноград”</h2>
-                    <div class="description__text">
-                        <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                    <div class="shop__stick-of-confectionery">
+                        <img src="./img/product.png" alt="" class="shop__img">
                     </div>
-                    <div class="description--weight">
-                        <div class="calorie--content">
-                            <div class="calorie--content__title"></div>
-                            <div class="calorie--content__text"></div>
+                    <div class="shop__composition">
+                        <div class="composition">
+                            <div class="composition__click">
+                                    <a href="#" class="composition__click-link">
+                                    <img src="./img/click.png" alt="" class="composition__click-img">
+                                    </a>
+                                </div>
+                            <ul class="composition__list">
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/grape.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Виноград
+                                    </div>
+                                    <div class="composition__weight">
+                                        25г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/nut.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Грецкий орех
+                                    </div>
+                                    <div class="composition__weight">
+                                        32г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/almond.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Кунжутное семя
+                                    </div>
+                                    <div class="composition__weight">
+                                        20г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/washing-powder.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Сухое молоко
+                                    </div>
+                                    <div class="composition__weight">
+                                        10г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/apitherapy.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Зам. сахара
+                                    </div>
+                                    <div class="composition__weight">
+                                        4г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/beans.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Какао бобы
+                                    </div>
+                                    <div class="composition__weight">
+                                        4г
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="massa">
-                            <div class="massa__title"></div>
-                            <div class="massa__text"></div>
+                        <div class="shop__description">
+                            <h2 class="description__title">Батончик “Гранола виноград”</h2>
+                            <div class="description__text">
+                                <p>Гранола из винограда, грецкого ореха и<br> кунжутных семечек. В состав также входят: сухое<br> молоко, заменитель сахара и какао бобы.</p>
+                            </div>
+                            <div class="description__weight">
+                                <div class="description__calorie  calorie__content">
+                                    <div class="calorie__content-title">Калорийность</div>
+                                    <div class="calorie__content-text">110 ккал</div>
+                                </div>
+                                <div class="description__massa">
+                                    <div class="massa__title">Вес</div>
+                                    <div class="massa__text">95 грамм</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description__price">
+                            <div class="price__text">140 ₽</div>
+                            <div class="description__btn">
+                                <a href="#" class=" btn btn__shop-green">Заказать</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="price">
-                    <div class="price__text">140 ₽</div>
-                    <div class="btn__shop">
-                        <a href="#" class=" btn btn__shop--green">Заказать</a>
+                </li>
+                <li class="shop__item">
+                    <div class="shop__stick-of-confectionery">
+                        <img src="./img/product.png" alt="" class="shop__img">
                     </div>
-                </div>
-            </div>
+                    <div class="shop__composition">
+                        <div class="composition">
+                            <div class="composition__click">
+                                    <a href="#" class="composition__click-link">
+                                    <img src="./img/click.png" alt="" class="composition__click-img">
+                                    </a>
+                                </div>
+                            <ul class="composition__list">
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/grape.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Виноград
+                                    </div>
+                                    <div class="composition__weight">
+                                        25г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/nut.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Грецкий орех
+                                    </div>
+                                    <div class="composition__weight">
+                                        32г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/almond.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Кунжутное семя
+                                    </div>
+                                    <div class="composition__weight">
+                                        20г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/washing-powder.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Сухое молоко
+                                    </div>
+                                    <div class="composition__weight">
+                                        10г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/apitherapy.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Зам. сахара
+                                    </div>
+                                    <div class="composition__weight">
+                                        4г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/beans.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Какао бобы
+                                    </div>
+                                    <div class="composition__weight">
+                                        4г
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shop__description">
+                            <h2 class="description__title">Батончик “Гранола виноград”</h2>
+                            <div class="description__text">
+                                <p>Гранола из винограда, грецкого ореха и<br> кунжутных семечек. В состав также входят: сухое<br> молоко, заменитель сахара и какао бобы.</p>
+                            </div>
+                            <div class="description__weight">
+                                <div class="description__calorie  calorie__content">
+                                    <div class="calorie__content-title">Калорийность</div>
+                                    <div class="calorie__content-text">110 ккал</div>
+                                </div>
+                                <div class="description__massa">
+                                    <div class="massa__title">Вес</div>
+                                    <div class="massa__text">95 грамм</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description__price">
+                            <div class="price__text">140 ₽</div>
+                            <div class="description__btn">
+                                <a href="#" class=" btn btn__shop-green">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="shop__item">
+                            <div class="shop__stick-of-confectionery">
+                                <img src="./img/product.png" alt="" class="shop__img">
+                            </div>
+                            <div class="shop__composition">
+                                <div class="composition">
+                                    <div class="composition__click">
+                                            <a href="#" class="composition__click-link">
+                                            <img src="./img/click.png" alt="" class="composition__click-img">
+                                            </a>
+                                        </div>
+                                    <ul class="composition__list">
+                                        <li class="composition__item">
+                                            <div class="composition__img">
+                                                <img src="./img/grape.png" alt="" class="composition__products">
+                                            </div>
+                                            <div class="composition__text">
+                                                Виноград
+                                            </div>
+                                            <div class="composition__weight">
+                                                25г
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <div class="composition__img">
+                                                <img src="./img/nut.png" alt="" class="composition__products">
+                                            </div>
+                                            <div class="composition__text">
+                                                Грецкий орех
+                                            </div>
+                                            <div class="composition__weight">
+                                                32г
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <div class="composition__img">
+                                                <img src="./img/almond.png" alt="" class="composition__products">
+                                            </div>
+                                            <div class="composition__text">
+                                                Кунжутное семя
+                                            </div>
+                                            <div class="composition__weight">
+                                                20г
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <div class="composition__img">
+                                                <img src="./img/washing-powder.png" alt="" class="composition__products">
+                                            </div>
+                                            <div class="composition__text">
+                                                Сухое молоко
+                                            </div>
+                                            <div class="composition__weight">
+                                                10г
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <div class="composition__img">
+                                                <img src="./img/apitherapy.png" alt="" class="composition__products">
+                                            </div>
+                                            <div class="composition__text">
+                                                Зам. сахара
+                                            </div>
+                                            <div class="composition__weight">
+                                                4г
+                                            </div>
+                                        </li>
+                                        <li class="composition__item">
+                                            <div class="composition__img">
+                                                <img src="./img/beans.png" alt="" class="composition__products">
+                                            </div>
+                                            <div class="composition__text">
+                                                Какао бобы
+                                            </div>
+                                            <div class="composition__weight">
+                                                4г
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="shop__description">
+                                    <h2 class="description__title">Батончик “Гранола виноград”</h2>
+                                    <div class="description__text">
+                                        <p>Гранола из винограда, грецкого ореха и<br> кунжутных семечек. В состав также входят: сухое<br> молоко, заменитель сахара и какао бобы.</p>
+                                    </div>
+                                    <div class="description__weight">
+                                        <div class="description__calorie  calorie__content">
+                                            <div class="calorie__content-title">Калорийность</div>
+                                            <div class="calorie__content-text">110 ккал</div>
+                                        </div>
+                                        <div class="description__massa">
+                                            <div class="massa__title">Вес</div>
+                                            <div class="massa__text">95 грамм</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description__price">
+                                    <div class="price__text">140 ₽</div>
+                                    <div class="description__btn">
+                                        <a href="#" class=" btn btn__shop-green">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                </li>
+                <li class="shop__item">
+                    <div class="shop__stick-of-confectionery">
+                        <img src="./img/product.png" alt="" class="shop__img">
+                    </div>
+                    <div class="shop__composition">
+                        <div class="composition">
+                            <div class="composition__click">
+                                    <a href="#" class="composition__click-link">
+                                    <img src="./img/click.png" alt="" class="composition__click-img">
+                                    </a>
+                                </div>
+                            <ul class="composition__list">
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/grape.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Виноград
+                                    </div>
+                                    <div class="composition__weight">
+                                        25г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/nut.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Грецкий орех
+                                    </div>
+                                    <div class="composition__weight">
+                                        32г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/almond.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Кунжутное семя
+                                    </div>
+                                    <div class="composition__weight">
+                                        20г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/washing-powder.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Сухое молоко
+                                    </div>
+                                    <div class="composition__weight">
+                                        10г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/apitherapy.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Зам. сахара
+                                    </div>
+                                    <div class="composition__weight">
+                                        4г
+                                    </div>
+                                </li>
+                                <li class="composition__item">
+                                    <div class="composition__img">
+                                        <img src="./img/beans.png" alt="" class="composition__products">
+                                    </div>
+                                    <div class="composition__text">
+                                        Какао бобы
+                                    </div>
+                                    <div class="composition__weight">
+                                        4г
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shop__description">
+                            <h2 class="description__title">Батончик “Гранола виноград”</h2>
+                            <div class="description__text">
+                                <p>Гранола из винограда, грецкого ореха и<br> кунжутных семечек. В состав также входят: сухое<br> молоко, заменитель сахара и какао бобы.</p>
+                            </div>
+                            <div class="description__weight">
+                                <div class="description__calorie  calorie__content">
+                                    <div class="calorie__content-title">Калорийность</div>
+                                    <div class="calorie__content-text">110 ккал</div>
+                                </div>
+                                <div class="description__massa">
+                                    <div class="massa__title">Вес</div>
+                                    <div class="massa__text">95 грамм</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description__price">
+                            <div class="price__text">140 ₽</div>
+                            <div class="description__btn">
+                                <a href="#" class=" btn btn__shop-green">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
             </section>       
             <section class="section section__team">
+                <div class="container">
                 <div class="team__title">
                 <h2>Команда</h2>
                 </div>
-                <ul class="team__people">
-                    <li class="people__item ">
+                <ul class=" team__people">
+                    <li class="people__item">
                         <div class="people__portrait">
                             <img src="./img/people7.png" alt="" class="portrait__img">
                         </div>
-                        <div class="people__title">Борис Федорович</div>
+                        <button class="people__trigger" type="button">Борис Федорович</button>
+                        <div class="people__content">
+                            <div class="people__content-block">
                         <div class="people__profession">Главный технолог</div>
                         <div class="people__text">Отвечает за вкусовые качества и калорийность.
                         </div>
+                        </div>
+                    </div>
                     </li>
                     <li class="people__item ">
                         <div class="people__portrait">
                             <img src="./img/people4.png" alt="" class="portrait__img">
-                        </div>
-                        <div class="people__title">Алла Иванова</div>
-                        <div class="people__profession">Специалист по упаковке                        </div>
-                        <div class="people__text">Автор запоминающегося стиля наших батончиков.
-                        </div>
+                        </div>   
+                            <button class="people__trigger" type="button">Алла Иванова</button>                                
+                            <div class="people__content">
+                                <div class="people__content-block">
+                            <div class="people__profession">Специалист по упаковке</div>
+                            <div class="people__text">Автор запоминающегося стиля 
+                                наших батончиков.
+                                
+                            </div>
+                            </div>
                     </li>
                     <li class="people__item ">
                         <div class="people__portrait">
                             <img src="./img/people5.png" alt="" class="portrait__img">
                         </div>
-                        <div class="people__title">Кирилл Матросов</div>
+                        <button class="people__trigger" type="button">Кирилл Матросов</button>
+                        <div class="people__content">
+                            <div class="people__content-block">
                         <div class="people__profession">Оператор</div>
-                        <div class="people__text">С радостью поможет подобрать батончики и оформить заказ.
+                        <div class="people__text">С радостью поможет подобрать батончики и оформить заказ. 
+                        </div>
                         </div>
                     </li>
                     <li class="people__item ">
                         <div class="people__portrait">
                             <img src="./img/people6.png" alt="" class="portrait__img">
-                        </div>
-                        <div class="people__title">Мила Рыжкова</div>
-                        <div class="people__profession">PR, маркетинг</div>
-                        <div class="people__text">По всем вопросам сотрудничества и рекламы писать только Миле.                             
-                        </div>
+                        </div>             
+                            <button class="people__trigger" type="button">Мила Рыжкова</button>
+                            <div class="people__content">
+                                <div class="people__content-block">
+                            <div class="people__profession">PR, маркетинг                            </div>
+                            <div class="people__text">По всем вопросам сотрудничества 
+                                и рекламы писать только Миле. 
+                                
+                            </div>
+                            </div>
                     </li>
                 </ul>
+            </div>
             </section>
-            <section class="section section__menu-litle">
-                <ul class="litle litle__list">
-                    <li class="litle__item">
-                        <a href="#" class="litle__trigger"></a>
-                        <div class="litle__title">
-                            <div class="litle__content">
-                                <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. </p>
+            <section class="section menu-litle" >
+                <h2 class="section__title section__title-menu">МЕНЮ</h2>
+                <div  class="accordeon-menu">
+                    <ul class="accordeon-menu__sections">
+                        <li class="accordeon-menu__item">
+                            <a  class="accordeon-menu__trigger accordeon-menu__trigger--one" >
+                                <span class="accordeon-menu__trigger-text">Батночики с молоком</span>
+                            </a>
+                            <div class="accordeon-menu__text">
+                                <div class="accordeon-menu__desk">
+                                    <p>
+                                        Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="litle__item">
-                        <a href="#" class="litle__trigger"></a>
-                        <div class="litle__title">
-                            <div class="litle__content">
-                                <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. </p>
+                        </li>
+                        <li class="accordeon-menu__item">
+                            <a  class="accordeon-menu__trigger accordeon-menu__trigger--two" >
+                                <span class="accordeon-menu__trigger-text">С мёдом и фруктами</span>
+                            </a>
+                            <div class="accordeon-menu__text">
+                                <div class="accordeon-menu__desk">
+                                    <p>
+                                        Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="litle__item">
-                        <a href="#" class="litle__trigger"></a>
-                        <div class="litle__title">
-                            <div class="litle__content">
-                                <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. </p>
+                        </li>
+                        <li class="accordeon-menu__item">
+                            <a  class="accordeon-menu__trigger accordeon-menu__trigger--three" >
+                                <span class="accordeon-menu__trigger-text">Дикие ягоды</span>
+                            </a>
+                            <div class="accordeon-menu__text">
+                                <div class="accordeon-menu__desk">
+                                    <p>
+                                        Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>        
+                        </li>
+                    </ul>
+                </div>
+        </section>       
             <section class="section section__reviews">
                 <div class="reviews__container">
                     <h2 class="container__title">Отзывы</h2>
@@ -590,13 +935,28 @@
                                     <div class="radio__title">Потребуется сдача</div>
                                 </label>
                             </div>
+                            <div class="form__btn">
+                                <a href="" class="btn btn__form btn__form--one">Заказать</a>
+                                <a href="" class="btn btn__form btn__form--two">Очитстить</a>
+                            </div>
+    
                         </div>
                     </form>
                 </div>
+                <div id="modal" class="modal">
+                    <div class="modal__container">
+                        <div class="modal__content">
+                            Сообщение отправлено
+                        </div>
+                        <div class="modal__button-container">
+                            <a href="#" class="btn app-close-modal btn--theme--green">Закрыть</a>
+                        </div>
+                    </div>
+                </div>
             </section>       
             <section class="section section__map">
-                <div class="map__img">
-                    <img src="./img/map.png" alt="" class="map__img-img">
+                <div id="map">
+                
                 </div>
             </section>       
                 <section class="section__footer">
@@ -641,5 +1001,13 @@
             <div  style="height:600px"></div>
         </ul>
         </div>
-    
+        <script type="text/javascript" src="../chocco/js/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="../chocco/js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>      
+        <script type="text/javascript" src="../chocco/js/slider.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../chocco/js/form.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+        <script type="text/javascript" src="../chocco/js/map.js"></script>
 </body>

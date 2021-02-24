@@ -1,0 +1,112 @@
+ul.benefit__list{
+    display: flex;
+    padding: 2%;
+
+    @include phones{
+        flex-direction: column;
+    }
+}
+li.benefit__item{
+    flex: 1;
+    margin: 0 3%;
+    list-style: none;
+    margin-left: 0;
+    text-align: center;
+
+    @include phones{
+        margin: 0;
+        display: flex;
+        margin-bottom: rem(19px);
+    }
+ 
+ &:last-child{
+    margin-left: 0;
+}
+}
+
+.benefit__container{
+    text-align: center;
+}
+.benefit__image-wrapper{
+    display: inline-block;
+    width: rem(126px);
+    height: rem(126px);
+    position: relative;
+    background:#f2f5f4;
+    background-repeat: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+img.benefit__icon{
+    width: rem(75px);
+    height: rem(69px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+section.section__benefit{
+    position: relative;
+    background: url(../img/leaf-grey.png) left top 40% no-repeat;
+    width: 100%;
+    
+    @include phones{
+        background: none;
+    }
+
+    
+    &::before{
+        content:url(../img/rasberry.png);
+        position: absolute;
+        bottom: -25%;
+        left: 0%;
+
+        @include phones{
+            display: none;
+        }
+    }
+    
+}
+.benefit__container{
+    width: 100%;   
+}
+.headline__title {
+    margin-bottom: (30px);
+    font-family:"Alegreya Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: (48px);
+    line-height: (58px);
+}
+.headline__subtitle {
+    color: #666666;
+    font-family:"Alegreya Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(18px);
+    line-height: rem(22px);
+    margin-bottom: rem(50px);
+
+    @include phones{
+            padding: 0;
+        }
+}
+.benefit__desc {
+    font-family:"Alegreya Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: rem(18px);
+    line-height: rem(22px);
+    color: #666666;
+
+}
+h3.benefit__title {
+    font-family:"Alegreya Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: rem(27px);
+    line-height: rem(32px);
+    color: #292929;
+    margin: rem(20px) 0;
+}
+

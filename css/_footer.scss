@@ -1,0 +1,36 @@
+ul.socials__list{
+    display: flex;
+    right: 0%;
+    top: 0;
+    position: absolute;
+}
+li.socials__item{
+    margin-right: rem(13px);
+    list-style-type: none;
+}
+.footer__telefone {
+    display: flex;
+}
+.footer__telefone-img {
+    margin-right: 0.5%;
+}
+section.section__footer {
+    position: relative;
+    width: 100%;
+}
+.footer__address {
+    font-family:"Alegreya Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(22px);
+    line-height: rem(24px);
+    color: #292929;
+}
+.telefone__number {
+    font-family:"Alegreya Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(22px);
+    line-height: rem(21px);
+    color: #497870;
+}

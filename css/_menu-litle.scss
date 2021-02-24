@@ -1,0 +1,109 @@
+section.menu-litle {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+
+
+}
+  
+  .section__title-menu {
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 10%; }
+  
+  .accordeon-menu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: flex; }
+  
+  .accordeon-menu__sections {
+    height: 100%;
+    font-size: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row; }
+  
+  .accordeon-menu__item {
+    display: flex;
+    height: 100%; }
+  
+  a.accordeon-menu__trigger {
+    height: 100%;
+    display: block;
+    width: rem(102px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    border: none;
+    cursor: pointer; 
+
+    &--one{
+        background: url(../img/bg1.png) ;
+    }
+    &--two{
+        background: url(../img/bg2.png) ;
+    }
+    &--three{
+        background: url(../img/bg3.png) ;
+    }
+    }
+
+
+
+    @media screen and (max-width: 480px) {
+      .accordeon-menu__trigger {
+        width: 4.375rem; } }
+  
+  .accordeon-menu__item.active {
+    position: relative; }
+    .accordeon-menu__item.active .accordeon-menu__trigger-text {
+      color: #f8b43a;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+  
+  .accordeon-menu__trigger-text {
+    font-family: 'gagalinregular';
+    font-size: 2.5rem;
+    color: #fff;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0; }
+  
+  .accordeon-menu__text {
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(49, 52, 54, 0.9);
+    -webkit-transition: width 0.4s;
+    -o-transition: width 0.4s;
+    transition: width 0.4s; }
+  
+  .accordeon-menu__desk {
+    height: 100%;
+    width: 33.75rem;
+    font-family: 'ubuntu';
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 2.1875rem; }
+    @media screen and (max-width: 480px) {
+      .accordeon-menu__desk {
+        width: 15rem; } }

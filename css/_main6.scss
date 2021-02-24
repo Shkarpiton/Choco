@@ -1,0 +1,11 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+$tablets:768px;
+$phones:480px;
+
+@mixin tablets {
+    width: 768px;
+}
+@mixin phones {
+    width: 480px;
+}

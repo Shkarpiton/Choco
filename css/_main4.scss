@@ -1,0 +1,49 @@
+ul.hero__feature{
+    display: flex;
+}
+li.feature__item{
+    margin-right: rem(46px);
+    list-style: none;
+    display: flex;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.feature__icon{
+    width: rem(45px);
+    margin-right: rem(7px);
+}
+.feature__text {
+    max-width: rem(85px);
+    font-family:"Alegreya Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(16px);
+    line-height: rem(18px);
+}
+.hero__icons{
+    @include tablets{
+        display: none;
+    }
+}
+
+.header__hamburger{
+    width: 24px;
+    height: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+
+    @include tablets{
+        display: inline-flex;
+        position: absolute;
+        right: 43px;
+    }
+}
+.hamburger__plank{
+    display: block;
+    background: #fff;
+    height: 4px;
+    border-radius: 10px;
+}
